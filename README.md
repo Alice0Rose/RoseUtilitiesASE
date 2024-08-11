@@ -9,6 +9,7 @@ The settings are as follows:
 - SlaughterXPMultiplier: Multiplier for how much XP dinos give when Slaughtered (0 or higher)
 - PacifyMinLevel: Minimum level dinos must be to be Pacified BEFORE multiplying by Difficulty (0 - 30)
 - TransferChuteMaxTransferRange: Max range in foundations inventories can be apart to transfer items with the Transfer Chute (0 - 100)
+- ResourcesToTransfer: Comma separated list of items that count as resources which that a player has no reason to keep on them outside of resource collection
 - InfiniteFoodBuffBlacklist: Comma separated list of creatures that cannot have infinite food items used on them
 - ShockAbsorbersDamageCap: Max amount of fall damage taken when Shock Absorbers are applied (0 or higher)
 - ShockAbsorbersDamagePercent: Max percent of fall damage taken when Shock Absorbers are applied (0 - 1)
@@ -34,6 +35,7 @@ SlaughterEnabled=True
 SlaughterXPMultiplier=1
 PacifyMinLevel=25
 TransferChuteMaxTransferRange=30
+ResourcesToTransfer='/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_BlackPearl.PrimalItemResource_BlackPearl_C,/Game/Aberration/CoreBlueprints/Resources/PrimalItemResource_Gem_Base.PrimalItemResource_Gem_Base_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ChitinPaste.PrimalItemResource_ChitinPaste_C,/Game/PrimalEarth/Dinos/Achatina/PrimalItemResource_SnailPaste.PrimalItemResource_SnailPaste_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Charcoal.PrimalItemResource_Charcoal_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Chitin.PrimalItemResource_Chitin_C,/Game/ScorchedEarth/CoreBlueprints/Resources/PrimalItemResource_Clay.PrimalItemResource_Clay_C,/Game/Extinction/CoreBlueprints/Resources/PrimalItemResource_CondensedGas.PrimalItemResource_CondensedGas_C,/Game/Aberration/CoreBlueprints/Resources/PrimalItemResource_Gas.PrimalItemResource_Gas_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Polymer.PrimalItemResource_Polymer_C,/Game/Extinction/CoreBlueprints/Resources/PrimalItemResource_CorruptedWood.PrimalItemResource_CorruptedWood_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Wood.PrimalItemResource_Wood_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Crystal.PrimalItemResource_Crystal_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Electronics.PrimalItemResource_Electronics_C,/Game/Aberration/CoreBlueprints/Resources/PrimalItemResource_ElementOre.PrimalItemResource_ElementOre_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Fibers.PrimalItemResource_Fibers_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Flint.PrimalItemResource_Flint_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Gunpowder.PrimalItemResource_Gunpowder_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Hide.PrimalItemResource_Hide_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Keratin.PrimalItemResource_Keratin_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_LeechBlood.PrimalItemResource_LeechBlood_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Metal.PrimalItemResource_Metal_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_MetalIngot.PrimalItemResource_MetalIngot_C,/Game/Genesis2/CoreBlueprints/Environment/Mutagen/PrimalItemConsumable_Mutagel.PrimalItemConsumable_Mutagel_C,/Game/Genesis2/CoreBlueprints/Environment/Mutagen/PrimalItemConsumable_Mutagen.PrimalItemConsumable_Mutagen_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Obsidian.PrimalItemResource_Obsidian_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Oil.PrimalItemResource_Oil_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_PeltOrHair.PrimalItemResource_PeltOrHair_C,/Game/ScorchedEarth/CoreBlueprints/Resources/PrimalItemResource_RawSalt.PrimalItemResource_RawSalt_C,/Game/ScorchedEarth/CoreBlueprints/Resources/PrimalItemResource_Sand.PrimalItemResource_Sand_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Sap.PrimalItemResource_Sap_C,/Game/Extinction/CoreBlueprints/Resources/PrimalItemResource_ScrapMetal.PrimalItemResource_ScrapMetal_C,/Game/Extinction/CoreBlueprints/Resources/PrimalItemResource_ScrapMetalIngot.PrimalItemResource_ScrapMetalIngot_C,/Game/Genesis/CoreBlueprints/Resources/PrimalItemResource_TurtleShell.PrimalItemResource_TurtleShell_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Silicon.PrimalItemResource_Silicon_C,/Game/ScorchedEarth/CoreBlueprints/Resources/PrimalItemResource_Silk.PrimalItemResource_Silk_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Sparkpowder.PrimalItemResource_Sparkpowder_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Stone.PrimalItemResource_Stone_C,/Game/ScorchedEarth/CoreBlueprints/Resources/PrimalItemResource_Sulfur.PrimalItemResource_Sulfur_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Thatch.PrimalItemResource_Thatch_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Wool.PrimalItemResource_Wool_C,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_Base.PrimalItemResourcePallet_Base_C,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_Berry_Base.PrimalItemConsumable_Berry_Base_C,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/Seeds/PrimalItemConsumableSeed.PrimalItemConsumableSeed_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_RareMushroom.PrimalItemResource_RareMushroom_C,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_RareFlower.PrimalItemResource_RareFlower_C,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_Veggie_Base.PrimalItemConsumable_Veggie_Base_C,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumablePoop.PrimalItemConsumablePoop_C,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_RawMeat.PrimalItemConsumable_RawMeat_C,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_RawPrimeMeat.PrimalItemConsumable_RawPrimeMeat_C,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_SpoiledMeat.PrimalItemConsumable_SpoiledMeat_C'
 InfiniteFoodBuffBlacklist='Daeodon_Character_BP_C,Daeodon_Character_BP_Eden_C'
 ShockAbsorbersDamageCap=1000
 ShockAbsorbersDamagePercent=0.01
@@ -313,7 +315,7 @@ The Pacification Injector contains a powerful narcotic concoction capable of put
 
 Only strong "high level" dinos can be pacified, as weaker ones tend to have...complications.
 
-Additionally, once a dino has been pacified, it cannot be restored to a fully functioning state.
+For best results, carefully perform the injection through your dino's radial menu. Remember that once a dino has been pacified, it cannot be restored to its original state.
 
 *Pacification is not covered by most health insurance providers*
 
@@ -327,7 +329,9 @@ cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Tools/PacificationInje
 
 Because moving items by hand is boring.
 
-The Transfer Chute is a revolution in item transfer and sorting technology! Simply aim to select a source inventory, then fire to transfer items to a destination inventory.
+The Transfer Chute is a revolution in item transfer and sorting technology! Simply aim to select a source inventory, then fire to transfer items to a destination inventory. Pressing the Drag key (G) will set yourself as the source inventory so you can easily transfer resources, and only resources, out of your inventory.
+
+But wait, there's more! The Transfer Chute can be reloaded (R) to switch to and from Linking mode. In this mode, the same selection controls apply (except structures cannot be selected), but instead of a one time item transfer, a persistent link is created that regularly transfers resources from the source to the destination!
 
 *User is liable for any items lost in tranzit*
 
@@ -446,6 +450,8 @@ cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Structures/SnailSanctuary/Pr
 Any tamed dino can be Slaughtered from their MultiUse menu while holding a Sickle. Slaughtering works the same way it does with an Ovis, killing the dino instantly.
 
 For obvious reasons, this only works on dinos you own.
+
+Additionally you can choose to Slaughter Many, which has the same effect as Slaughter, but affects all dinos of the same species as the original in a ~3 foundation radius. Slaughter Many also ignores dinos that are: named, have saddles, or are mating, in an attempt to prevent accidentally killing important dinos.
 
 </details>
 
