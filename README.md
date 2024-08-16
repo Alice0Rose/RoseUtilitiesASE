@@ -8,7 +8,7 @@ The settings are as follows:
 - SlaughterEnabled: Should the Slaughter MultiUse show for tamed dinos (True or False)
 - SlaughterXPMultiplier: Multiplier for how much XP dinos give when Slaughtered (0 or higher)
 - PacifyMinLevel: Minimum level dinos must be to be Pacified BEFORE multiplying by Difficulty (0 - 30)
-- TransferChuteMaxTransferRange: Max range in foundations inventories can be apart to transfer items with the Transfer Chute (0 - 100)
+- TransferChuteMaxTransferRange: Max range in foundations inventories can be apart to transfer items with the Transfer Chute (0 - 60)
 - ResourcesToTransfer: Comma separated list of items that count as resources which that a player has no reason to keep on them outside of resource collection
 - InfiniteFoodBuffBlacklist: Comma separated list of creatures that cannot have infinite food items used on them
 - ShockAbsorbersDamageCap: Max amount of fall damage taken when Shock Absorbers are applied (0 or higher)
@@ -18,16 +18,16 @@ The settings are as follows:
 - PackagerAutoCollectStructureWhitelist: Comma separated list of structures Packager can pull resources from
 - CommunalNestIncubationRate: Rate at which the Communal Nest incubates fertilized eggs in its inventory (0 or higher)
 - CommunalNestDisableMatingWhenFull: Should the Communal Nest disable mating for all dinos in range when full (True or False)
-- SnailSanctuaryProductionPerMinute: How many Achatina Paste the Snail Sanctuary creates per minute
+- SnailSanctuaryProductionPerMinute: How many Achatina Paste the Snail Sanctuary creates per minute (0 - 1000)
 - DinoDaycareConsumptionRate: How many Rare Flowers per cycle should the Dino Daycare consume while Imprinting is enabled (0 or higher)
 - DinoDaycareAllowAutoClaim: Should Dino Daycare be able to auto claim nearby baby dinos (True or False)
 - DinoDaycareDisableMatingNearbyDinoAmount: Max number of dinos in range of Dino Daycare before disabling mating for all dinos in range; disabled if -1 (-1 - 999999)
-- HoneyBarrelAutoCollectRange: Max range in foundations (0 - 100)
-- PackagerAutoCollectRange: Max range in foundations (0 - 100)
-- IndustrialComposterRange: Max range in foundations (0 - 100)
-- CropSiloAutoCollectRange: Max range in foundations (0 - 100)
-- CommunalNestAutoCollectRange: Max range in foundations (0 - 100)
-- DinoDaycareRange: Max range in foundations (0 - 100)
+- HoneyBarrelAutoCollectRange: Max range in foundations (0 - 50)
+- PackagerAutoCollectRange: Max range in foundations (0 - 50)
+- IndustrialComposterRange: Max range in foundations (0 - 50)
+- CropSiloAutoCollectRange: Max range in foundations (0 - 50)
+- CommunalNestAutoCollectRange: Max range in foundations (0 - 50)
+- DinoDaycareRange: Max range in foundations (0 - 30)
 
 ```
 [RosesUtilities]
@@ -40,19 +40,19 @@ InfiniteFoodBuffBlacklist='Daeodon_Character_BP_C,Daeodon_Character_BP_Eden_C'
 ShockAbsorbersDamageCap=1000
 ShockAbsorbersDamagePercent=0.01
 PlatformProtectorAllowPVPDamage=false
-HoneyBarrelAutoCollectStructureWhitelist='BeeHive_PlayerOwned_C,BP_BeeHivePlus_C'
-PackagerAutoCollectStructureWhitelist='Forge_C,IndustrialForge_C,BP_ForgePlus_C,BP_IndustrialForgePlus_C,BP_TekForge_C'
+HoneyBarrelAutoCollectStructureWhitelist=/Game/PrimalEarth/Structures/BeeHive/BeeHive_PlayerOwned.BeeHive_PlayerOwned,/Game/Mods/StructuresPlusMod/Misc/BeeHive/BP_BeeHivePlus.BP_BeeHivePlus'
+PackagerAutoCollectStructureWhitelist='/Game/PrimalEarth/Structures/Forge.Forge,/Game/PrimalEarth/Structures/IndustrialForge.IndustrialForge,/Game/Mods/StructuresPlusMod/Crafting/RefiningForge/BP_ForgePlus.BP_ForgePlus,/Game/Mods/StructuresPlusMod/Misc/IndustrialForge/BP_IndustrialForgePlus.BP_IndustrialForgePlus,/Game/Mods/StructuresPlusMod/Misc/TekForge/BP_TekForge.BP_TekForge'
 CommunalNestIncubationRate=1
 CommunalNestDisableMatingWhenFull=True
 SnailSanctuaryProductionPerMinute=1
 DinoDaycareConsumptionRate=1
 DinoDaycareAllowAutoClaim=True
-DinoDaycareDisableMatingNearbyDinoAmount=300
-HoneyBarrelAutoCollectRange=30
-PackagerAutoCollectRange=30
-IndustrialComposterRange=30
-CropSiloAutoCollectRange=30
-CommunalNestAutoCollectRange=30
+DinoDaycareDisableMatingNearbyDinoAmount=400
+HoneyBarrelAutoCollectRange=25
+PackagerAutoCollectRange=25
+IndustrialComposterRange=25
+CropSiloAutoCollectRange=25
+CommunalNestAutoCollectRange=25
 DinoDaycareRange=15
 ```
 
