@@ -37,7 +37,7 @@ The settings are as follows:
 SlaughterEnabled=True
 SlaughterXPMultiplier=1
 PacifyMinLevel=25
-GenomeHarvestMinLevel=35
+GenomeHarvestMinLevel=40
 GenomeHarvestAlwaysIncreaseStatAmount=1
 GenomeHarvestRandomIncreaseStatAmount=2
 TransferChuteMaxTransferRange=30
