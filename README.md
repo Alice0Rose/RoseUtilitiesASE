@@ -7,7 +7,10 @@ First close your game/server. Then in the GameUserSettings.ini file, find/add th
 The settings are as follows:
 - SlaughterEnabled: Should the Slaughter MultiUse show for tamed dinos (True or False)
 - SlaughterXPMultiplier: Multiplier for how much XP dinos give when Slaughtered (0 or higher)
-- PacifyMinLevel: Minimum level dinos must be to be Pacified BEFORE multiplying by Difficulty (0 - 30)
+- PacifyMinLevel: Minimum level dinos must be to be Pacified BEFORE multiplying by Difficulty (don't forget to account for taming effectiveness bonus levels) (0 - 999)
+- GenomeHarvestMinLevel: Minimum level dinos must be to be Genome Harvested BEFORE multiplying by Difficulty (don't forget to account for taming effectiveness bonus levels) (0 - 999)
+- GenomeHarvestAlwaysIncreaseStatAmount: Amount Food, Oxygen, and Speed should increase per Stat Mutating Genome use (0 - 254)
+- GenomeHarvestRandomIncreaseStatAmount: Amount Weight or Stamina and Health or Melee should increase per Stat Mutating Genome use (0 - 254)
 - TransferChuteMaxTransferRange: Max range in foundations inventories can be apart to transfer items with the Transfer Chute (0 - 60)
 - ResourcesToTransfer: Comma separated list of items that count as resources which that a player has no reason to keep on them outside of resource collection
 - InfiniteFoodBuffBlacklist: Comma separated list of creatures that cannot have infinite food items used on them
@@ -34,8 +37,11 @@ The settings are as follows:
 SlaughterEnabled=True
 SlaughterXPMultiplier=1
 PacifyMinLevel=25
+GenomeHarvestMinLevel=35
+GenomeHarvestAlwaysIncreaseStatAmount=1
+GenomeHarvestRandomIncreaseStatAmount=2
 TransferChuteMaxTransferRange=30
-ResourcesToTransfer='/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_BlackPearl.PrimalItemResource_BlackPearl,/Game/Aberration/CoreBlueprints/Resources/PrimalItemResource_Gem_Base.PrimalItemResource_Gem_Base,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ChitinPaste.PrimalItemResource_ChitinPaste,/Game/PrimalEarth/Dinos/Achatina/PrimalItemResource_SnailPaste.PrimalItemResource_SnailPaste,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Charcoal.PrimalItemResource_Charcoal,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Chitin.PrimalItemResource_Chitin,/Game/ScorchedEarth/CoreBlueprints/Resources/PrimalItemResource_Clay.PrimalItemResource_Clay,/Game/Extinction/CoreBlueprints/Resources/PrimalItemResource_CondensedGas.PrimalItemResource_CondensedGas,/Game/Aberration/CoreBlueprints/Resources/PrimalItemResource_Gas.PrimalItemResource_Gas,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Polymer.PrimalItemResource_Polymer,/Game/Extinction/CoreBlueprints/Resources/PrimalItemResource_CorruptedWood.PrimalItemResource_CorruptedWood,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Wood.PrimalItemResource_Wood,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Crystal.PrimalItemResource_Crystal,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Electronics.PrimalItemResource_Electronics,/Game/Aberration/CoreBlueprints/Resources/PrimalItemResource_ElementOre.PrimalItemResource_ElementOre,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Fibers.PrimalItemResource_Fibers,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Flint.PrimalItemResource_Flint,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Gunpowder.PrimalItemResource_Gunpowder,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Hide.PrimalItemResource_Hide,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Keratin.PrimalItemResource_Keratin,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_LeechBlood.PrimalItemResource_LeechBlood,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Metal.PrimalItemResource_Metal,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_MetalIngot.PrimalItemResource_MetalIngot,/Game/Genesis2/CoreBlueprints/Environment/Mutagen/PrimalItemConsumable_Mutagel.PrimalItemConsumable_Mutagel,/Game/Genesis2/CoreBlueprints/Environment/Mutagen/PrimalItemConsumable_Mutagen.PrimalItemConsumable_Mutagen,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Obsidian.PrimalItemResource_Obsidian,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Oil.PrimalItemResource_Oil,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_PeltOrHair.PrimalItemResource_PeltOrHair,/Game/ScorchedEarth/CoreBlueprints/Resources/PrimalItemResource_RawSalt.PrimalItemResource_RawSalt,/Game/ScorchedEarth/CoreBlueprints/Resources/PrimalItemResource_Sand.PrimalItemResource_Sand,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Sap.PrimalItemResource_Sap,/Game/Extinction/CoreBlueprints/Resources/PrimalItemResource_ScrapMetal.PrimalItemResource_ScrapMetal,/Game/Extinction/CoreBlueprints/Resources/PrimalItemResource_ScrapMetalIngot.PrimalItemResource_ScrapMetalIngot,/Game/Genesis/CoreBlueprints/Resources/PrimalItemResource_TurtleShell.PrimalItemResource_TurtleShell,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Silicon.PrimalItemResource_Silicon,/Game/ScorchedEarth/CoreBlueprints/Resources/PrimalItemResource_Silk.PrimalItemResource_Silk,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Sparkpowder.PrimalItemResource_Sparkpowder,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Stone.PrimalItemResource_Stone,/Game/ScorchedEarth/CoreBlueprints/Resources/PrimalItemResource_Sulfur.PrimalItemResource_Sulfur,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Thatch.PrimalItemResource_Thatch,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Wool.PrimalItemResource_Wool,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_Base.PrimalItemResourcePallet_Base,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_Berry_Base.PrimalItemConsumable_Berry_Base,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/Seeds/PrimalItemConsumableSeed.PrimalItemConsumableSeed,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_RareMushroom.PrimalItemResource_RareMushroom,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_RareFlower.PrimalItemResource_RareFlower,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_Veggie_Base.PrimalItemConsumable_Veggie_Base,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumablePoop.PrimalItemConsumablePoop,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_RawMeat.PrimalItemConsumable_RawMeat,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_RawPrimeMeat.PrimalItemConsumable_RawPrimeMeat,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_SpoiledMeat.PrimalItemConsumable_SpoiledMeat'
+ResourcesToTransfer='/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_BlackPearl.PrimalItemResource_BlackPearl,/Game/Aberration/CoreBlueprints/Resources/PrimalItemResource_Gem_Base.PrimalItemResource_Gem_Base,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ChitinPaste.PrimalItemResource_ChitinPaste,/Game/PrimalEarth/Dinos/Achatina/PrimalItemResource_SnailPaste.PrimalItemResource_SnailPaste,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Charcoal.PrimalItemResource_Charcoal,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Chitin.PrimalItemResource_Chitin,/Game/ScorchedEarth/CoreBlueprints/Resources/PrimalItemResource_Clay.PrimalItemResource_Clay,/Game/Extinction/CoreBlueprints/Resources/PrimalItemResource_CondensedGas.PrimalItemResource_CondensedGas,/Game/Aberration/CoreBlueprints/Resources/PrimalItemResource_Gas.PrimalItemResource_Gas,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Polymer.PrimalItemResource_Polymer,/Game/Extinction/CoreBlueprints/Resources/PrimalItemResource_CorruptedWood.PrimalItemResource_CorruptedWood,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Wood.PrimalItemResource_Wood,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Crystal.PrimalItemResource_Crystal,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Electronics.PrimalItemResource_Electronics,/Game/Aberration/CoreBlueprints/Resources/PrimalItemResource_ElementOre.PrimalItemResource_ElementOre,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Fibers.PrimalItemResource_Fibers,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Flint.PrimalItemResource_Flint,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Gunpowder.PrimalItemResource_Gunpowder,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Hide.PrimalItemResource_Hide,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Keratin.PrimalItemResource_Keratin,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_LeechBlood.PrimalItemResource_LeechBlood,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Metal.PrimalItemResource_Metal,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_MetalIngot.PrimalItemResource_MetalIngot,/Game/Genesis2/CoreBlueprints/Environment/Mutagen/PrimalItemConsumable_Mutagel.PrimalItemConsumable_Mutagel,/Game/Genesis2/CoreBlueprints/Environment/Mutagen/PrimalItemConsumable_Mutagen.PrimalItemConsumable_Mutagen,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Obsidian.PrimalItemResource_Obsidian,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Oil.PrimalItemResource_Oil,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_PeltOrHair.PrimalItemResource_PeltOrHair,/Game/ScorchedEarth/CoreBlueprints/Resources/PrimalItemResource_RawSalt.PrimalItemResource_RawSalt,/Game/ScorchedEarth/CoreBlueprints/Resources/PrimalItemResource_Sand.PrimalItemResource_Sand,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Sap.PrimalItemResource_Sap,/Game/Extinction/CoreBlueprints/Resources/PrimalItemResource_ScrapMetal.PrimalItemResource_ScrapMetal,/Game/Extinction/CoreBlueprints/Resources/PrimalItemResource_ScrapMetalIngot.PrimalItemResource_ScrapMetalIngot,/Game/Genesis/CoreBlueprints/Resources/PrimalItemResource_TurtleShell.PrimalItemResource_TurtleShell,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Silicon.PrimalItemResource_Silicon,/Game/ScorchedEarth/CoreBlueprints/Resources/PrimalItemResource_Silk.PrimalItemResource_Silk,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Sparkpowder.PrimalItemResource_Sparkpowder,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Stone.PrimalItemResource_Stone,/Game/ScorchedEarth/CoreBlueprints/Resources/PrimalItemResource_Sulfur.PrimalItemResource_Sulfur,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Thatch.PrimalItemResource_Thatch,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Wool.PrimalItemResource_Wool,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_Base.PrimalItemResourcePallet_Base,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_Berry_Base.PrimalItemConsumable_Berry_Base,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/Seeds/PrimalItemConsumableSeed.PrimalItemConsumableSeed,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_RareMushroom.PrimalItemResource_RareMushroom,/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_RareFlower.PrimalItemResource_RareFlower,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumable_Veggie_Base.PrimalItemConsumable_Veggie_Base,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/BaseBPs/PrimalItemConsumablePoop.PrimalItemConsumablePoop,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_RawMeat.PrimalItemConsumable_RawMeat,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_RawPrimeMeat.PrimalItemConsumable_RawPrimeMeat,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_SpoiledMeat.PrimalItemConsumable_SpoiledMeat,/Game/Mods/RosesUtilities/Items/Resources/MutatingGenomes/PrimalItemResource_StatMutatingGenome.PrimalItemResource_StatMutatingGenome,/Game/Mods/RosesUtilities/Items/Resources/MutatingGenomes/PrimalItemResource_ColorMutatingGenome.PrimalItemResource_ColorMutatingGenome'
 InfiniteFoodBuffBlacklist='Daeodon_Character_BP_C,Daeodon_Character_BP_Eden_C'
 ShockAbsorbersDamageCap=1000
 ShockAbsorbersDamagePercent=0.01
@@ -207,6 +213,7 @@ Types:
 - Element Ore
 
 *May cause issues with some stack mods. If you only want to change the stack size of items, use the Game.ini settings instead of a stack mod. If you also want the weight reduction from a stack mod, then the Packager and Resource Pallets are redundant and shouldn't be used.*
+
 ```
 cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_MetalIngots.PrimalItemResourcePallet_MetalIngots'" 1 0 false
 ```
@@ -289,6 +296,23 @@ cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Resources/PacifiedDino
 ```
 </details>
 
+#### Mutating Genomes
+<details><summary>------- Info ---------</summary>
+
+Created with the Genome Harvester, and come in Stat and Color variants, and can only be used on dinos of the same species as the one they were harvested from.
+
+Stat Mutating Genomes boost the base stats similar to mutations of the dino they are used on.
+
+Color Mutating Genomes randomize one of the eligible color zones on the dino they are used on.
+
+```
+cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Resources/MutatingGenomes/PrimalItemResource_StatMutatingGenome.PrimalItemResource_StatMutatingGenome'" 1 0 false
+```
+```
+cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Resources/MutatingGenomes/PrimalItemResource_ColorMutatingGenome.PrimalItemResource_ColorMutatingGenome'" 1 0 false
+```
+</details>
+
 ### Tools 
 #### Equipment Reconstructor
 <details><summary>------- Info ---------</summary>
@@ -337,6 +361,22 @@ But wait, there's more! The Transfer Chute can be reloaded (R) to switch to and 
 
 ```
 cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Tools/TransferChute/PrimalItem_WeaponTransferChute.PrimalItem_WeaponTransferChute'" 1 0 false
+```
+</details>
+
+#### Genome Harvester
+<details><summary>------- Info ---------</summary>
+
+Why wait for mutations when you can force them?
+
+The Genome Harvester rapidly (and destructively) cycles through the genetic code of its target, converting them into two hyper-potent genome sequences. The first is capable of instantly improving the capabilities of any dino of the same species as the now-deceased original dino, while the second causes dramatic skin, scale, feather, and hair pigmentation shifts!
+
+Due to the temperamental nature of genetic manipulation, only the strongest of dinos can be harvested for Mutating Genomes. Additionally, dinos bred in captivity are ineligible due to a lack of genetic diversity.
+
+*In the event of uncontrollable over-mutation, user is solely responsible for any destruction of nearby coastal cities*
+
+```
+cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Tools/GenomeHarvester/PrimalItem_WeaponGenomeHarvester.PrimalItem_WeaponGenomeHarvester'" 1 0 false
 ```
 </details>
 
