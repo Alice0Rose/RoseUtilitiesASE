@@ -386,7 +386,7 @@ cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Tools/GenomeHarvester/
 
 Turns out dinos are better at sharing than we thought...
 
-The Communal Nest ensures that all your dinos' eggs stay safe and sound under one roof, thanks to the hard work of the integrated Oviraptor. Stored eggs are also kept from spoiling and are slowly incubated.
+The Communal Nest ensures that all your dinos' eggs stay safe and sound under one roof, thanks to the hard work of the integrated Oviraptor. Stored eggs are also kept from spoiling and are slowly incubated. The Oviraptor can even be instructed to only pick up specific eggs via the radial wheel menu!
 
 *User is responsible for any over-hatching that may occur*
 
@@ -400,7 +400,7 @@ cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Structures/CommunalNest/Prim
 
 It ain't much, but it's honest work.
 
-Crop Silos are a quintessential part of every farm, capable of storing large amount of freshly grown crops without letting them rot. They even have an integrated Iguanodon that collects from nearby crop plots so you don't have to!
+Crop Silos are a quintessential part of every farm, capable of storing large amounts of freshly grown crops and berries without letting them rot. They even have an integrated Iguanodon that collects from nearby crop plots so you don't have to!
 
 *Not for use with missiles or long-range explosives*
 
