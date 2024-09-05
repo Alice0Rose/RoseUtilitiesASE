@@ -414,7 +414,7 @@ cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Structures/CropSilo/PrimalIt
 
 Parenting is tough, so let someone else do it!
 
-The Dino Daycare takes care of your baby dinos while you're busy adventuring. Not only does it feed baby dinos, it also claims them for you when they are born! On top of all that, it can even imprint them if given Rare Flowers; all thanks to the built-in Procoptodon and its caring, nurturing nature.
+The Dino Daycare takes care of your baby dinos while you're busy adventuring. Not only does it feed baby dinos, it also claims them for you when they are born! Additionally, it can be trained to only claim dinos of a specific species, and cull babies that are below a certain level. As a bonus on top of all of that, it can even imprint them if given Rare Flowers; all thanks to the built-in Procoptodon and its caring, nurturing nature.
 
 *Usage waves right to complain on how dinos are raised and taught*
 
