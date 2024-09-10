@@ -193,7 +193,7 @@ cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Consumables/V-Mate/Pri
 	
 Compact packages of resources which are lighter and more space efficient than their unpackaged contents. 
 
-Crafted in the [Packager](https://github.com/Daniel0Widing/RosesUtilities#packager), and unpacked by using in an inventory. 
+Crafted in the [Packager](https://github.com/Alice0Widing/RosesUtilities#packager), and unpacked by using in an inventory. 
 
 Types: 
 - Metal Ingot
@@ -414,7 +414,7 @@ cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Structures/CropSilo/PrimalIt
 
 Parenting is tough, so let someone else do it!
 
-The Dino Daycare takes care of your baby dinos while you're busy adventuring. Not only does it feed baby dinos, it also claims them for you when they are born! Additionally, it can be trained to only claim dinos of a specific species, and cull babies that are below a certain level. As a bonus on top of all of that, it can even imprint them if given Rare Flowers; all thanks to the built-in Procoptodon and its caring, nurturing nature.
+The Dino Daycare takes care of your baby dinos while you're busy adventuring. Not only does it feed baby dinos, it also claims them for you when they are born! Additionally, it can be trained to only claim dinos of a specific species, and cull unnamed babies that are below a certain level. As a bonus on top of all of that, it can even imprint them if given Rare Flowers; all thanks to the built-in Procoptodon and its caring, nurturing nature.
 
 *Usage waves right to complain on how dinos are raised and taught*
 
@@ -458,9 +458,9 @@ cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Structures/IndustrialCompost
 
 Proper packing makes a world of difference.
 
-The Packager uses electricity to compress and pack regular resources into pallets which are lighter and more compact, making them far easier to transport from place to place. It can also collect resources from nearby inventories automatically.
+The Packager uses electricity to compress and pack regular resources into pallets which are lighter and more compact, making them far easier to transport from place to place. It can also collect resources from nearby structures and dinos automatically. 
 
-Due to the sensitive components that make up the Packager, once it has been activated, it takes significantly longer to pick back up, so choose wisely where you place it!
+Advanced specialized internal components reduce the weight of all pallets inside the Packager, but also cause it to take much longer to pick up after being activated.
 
 *Stamps not required!*
 
