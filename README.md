@@ -1,8 +1,8 @@
-# Rose's Utilities
+# Rose Utilities
 Adds a collection of items, structures, and features that enhance both vanilla and modded ARK experiences.
 
 ## GameUserSettings.ini Configuration
-First close your game/server. Then in the GameUserSettings.ini file, find/add the [RosesUtilities] section below and change the settings you want changed and save the file. When you restart your game/server, the new settings should be applied.
+First close your game/server. Then in the GameUserSettings.ini file, find/add the [RoseUtilities] section below and change the settings you want changed and save the file. When you restart your game/server, the new settings should be applied.
 
 The settings are as follows:
 - SlaughterEnabled: Should the Slaughter MultiUse show for tamed dinos (True or False)
@@ -33,7 +33,7 @@ The settings are as follows:
 - DinoDaycareRange: Max range in foundations (0 - 30)
 
 ```
-[RosesUtilities]
+[RoseUtilities]
 SlaughterEnabled=True
 SlaughterXPMultiplier=1
 PacifyMinLevel=25
@@ -266,7 +266,7 @@ cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Resources/Pallets/Prim
 
 Itemized dinos created with a Pacification Injector.
 
-Cannot be converted back to real dinos and only used for crafting Rose's Utilities structures.
+Cannot be converted back to real dinos and only used for crafting Rose Utilities structures.
 
 Types:
 - Achatina
@@ -498,7 +498,7 @@ Additionally you can choose to Slaughter Many, which has the same effect as Slau
 #### Admin Commands
 <details><summary>------- Info ---------</summary>
 
-Admins can use the following commands to receive all Rose's Utilities items or to receive all items and materials to test them with, respectively.
+Admins can use the following commands to receive all Rose Utilities items or to receive all items and materials to test them with, respectively.
 
 ```
 cheat ScriptCommand RUGiveAll
