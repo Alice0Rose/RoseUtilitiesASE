@@ -19,6 +19,8 @@ The settings are as follows:
 - PlatformProtectorAllowPVPDamage: Should the Platform Protector allow PvP damage against protected dinos (True or False)
 - HoneyBarrelAutoCollectStructureWhitelist: Comma separated list of structures Honey Barrel can pull honey from
 - PackagerAutoCollectStructureWhitelist: Comma separated list of structures Packager can pull resources from
+- PackagerDistributeStructureWhitelist: Comma separated list of structures Packager can distribute metal and wood to
+- PackagerDistributeDinoWhitelist: Comma separated list of dinos Packager can distribute metal and wood to
 - CommunalNestIncubationRate: Rate at which the Communal Nest incubates fertilized eggs in its inventory (0 or higher)
 - CommunalNestDisableMatingWhenFull: Should the Communal Nest disable mating for all dinos in range when full (True or False)
 - SnailSanctuaryProductionPerMinute: How many Achatina Paste the Snail Sanctuary creates per minute (0 - 1000)
@@ -48,6 +50,8 @@ ShockAbsorbersDamagePercent=0.01
 PlatformProtectorAllowPVPDamage=false
 HoneyBarrelAutoCollectStructureWhitelist=/Game/PrimalEarth/Structures/BeeHive/BeeHive_PlayerOwned.BeeHive_PlayerOwned,/Game/Mods/StructuresPlusMod/Misc/BeeHive/BP_BeeHivePlus.BP_BeeHivePlus'
 PackagerAutoCollectStructureWhitelist='/Game/PrimalEarth/Structures/Forge.Forge,/Game/PrimalEarth/Structures/IndustrialForge.IndustrialForge,/Game/Mods/StructuresPlusMod/Crafting/RefiningForge/BP_ForgePlus.BP_ForgePlus,/Game/Mods/StructuresPlusMod/Misc/IndustrialForge/BP_IndustrialForgePlus.BP_IndustrialForgePlus,/Game/Mods/StructuresPlusMod/Misc/TekForge/BP_TekForge.BP_TekForge'
+PackagerDistributeStructureWhitelist='/Game/PrimalEarth/Structures/Forge.Forge,/Game/PrimalEarth/Structures/IndustrialForge.IndustrialForge,/Game/Mods/StructuresPlusMod/Crafting/RefiningForge/BP_ForgePlus.BP_ForgePlus,/Game/Mods/StructuresPlusMod/Misc/IndustrialForge/BP_IndustrialForgePlus.BP_IndustrialForgePlus,/Game/Mods/StructuresPlusMod/Misc/TekForge/BP_TekForge.BP_TekForge'
+PackagerDistributeDinoWhitelist='/Game/Genesis/Dinos/Cherufe/Cherufe_Character_BP.Cherufe_Character_BP,/Game/ScorchedEarth/Dinos/Phoenix/Phoenix_Character_BP.Phoenix_Character_BP'
 CommunalNestIncubationRate=1
 CommunalNestDisableMatingWhenFull=True
 SnailSanctuaryProductionPerMinute=1
@@ -63,7 +67,7 @@ DinoDaycareRange=15
 ```
 
 ## S+ Pull Resource Config
-Add the following to the end of the **PullResourceAdditions=** line in your **GameUserSettings.ini** file under the **\[StructuresPlus\]** section to enable S+ resource pulling for Rose Utilities items. If the config line already has items in it from other mods, separate those items from the Rose's Utilities items with a comma.
+Add the following to the end of the **PullResourceAdditions=** line in your **GameUserSettings.ini** file under the **\[StructuresPlus\]** section to enable S+ resource pulling for Rose's Utilities items. If the config line already has items in it from other mods, separate those items from the Rose Utilities items with a comma.
 
 ```
 /Game/Mods/RosesUtilities/Items/Consumables/FleshOfOuroboros/PrimalItemConsumable_FleshOfOuroboros.PrimalItemConsumable_FleshOfOuroboros,/Game/Mods/RosesUtilities/Items/Consumables/FruitOfGrisaia/PrimalItemConsumable_FruitOfGrisaia.PrimalItemConsumable_FruitOfGrisaia,/Game/Mods/RosesUtilities/Items/Consumables/PlatformProtector/PrimalItemConsumable_PlatformProtector.PrimalItemConsumable_PlatformProtector,/Game/Mods/RosesUtilities/Items/Consumables/Self-ImprovementBook/PrimalItemConsumable_Self-ImprovementBook.PrimalItemConsumable_Self-ImprovementBook,/Game/Mods/RosesUtilities/Items/Consumables/ShockAbsorbers/PrimalItemConsumable_ShockAbsorbers.PrimalItemConsumable_ShockAbsorbers,/Game/Mods/RosesUtilities/Items/Consumables/SurvivalKit/PrimalItemConsumable_SurvivalKit.PrimalItemConsumable_SurvivalKit,/Game/Mods/RosesUtilities/Items/Consumables/TeamBuildingBook/PrimalItemConsumable_TeamBuildingBook.PrimalItemConsumable_TeamBuildingBook,/Game/Mods/RosesUtilities/Items/Consumables/V-Mate/PrimalItemConsumable_V-Mate.PrimalItemConsumable_V-Mate,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_MetalIngots.PrimalItemResourcePallet_MetalIngots,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_ScrapMetalIngot.PrimalItemResourcePallet_ScrapMetalIngot,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_Crystal.PrimalItemResourcePallet_Crystal,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_Wood.PrimalItemResourcePallet_Wood,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_FungalWood.PrimalItemResourcePallet_FungalWood,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_CorruptedWood.PrimalItemResourcePallet_CorruptedWood,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_Stone.PrimalItemResourcePallet_Stone,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_Obsidian.PrimalItemResourcePallet_Obsidian,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_ElementShard.PrimalItemResourcePallet_ElementShard,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_Flint.PrimalItemResourcePallet_Flint,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_Charcoal.PrimalItemResourcePallet_Charcoal,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_GreenGem.PrimalItemResourcePallet_GreenGem,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_BlueGem.PrimalItemResourcePallet_BlueGem,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_RedGem.PrimalItemResourcePallet_RedGem,/Game/Mods/RosesUtilities/Items/Resources/Pallets/PrimalItemResourcePallet_ElementOre.PrimalItemResourcePallet_ElementOre,/Game/Mods/RosesUtilities/Items/Resources/PacifiedDinos/PrimalItemResource_PacifiedDino_Achatina.PrimalItemResource_PacifiedDino_Achatina,/Game/Mods/RosesUtilities/Items/Resources/PacifiedDinos/PrimalItemResource_PacifiedDino_DungBeetle.PrimalItemResource_PacifiedDino_DungBeetle,/Game/Mods/RosesUtilities/Items/Resources/PacifiedDinos/PrimalItemResource_PacifiedDino_Iguanodon.PrimalItemResource_PacifiedDino_Iguanodon,/Game/Mods/RosesUtilities/Items/Resources/PacifiedDinos/PrimalItemResource_PacifiedDino_Oviraptor.PrimalItemResource_PacifiedDino_Oviraptor,/Game/Mods/RosesUtilities/Items/Resources/PacifiedDinos/PrimalItemResource_PacifiedDino_Procoptodon.PrimalItemResource_PacifiedDino_Procoptodon,/Game/Mods/RosesUtilities/Items/Resources/PacifiedDinos/PrimalItemResource_PacifiedDino_RollRat.PrimalItemResource_PacifiedDino_RollRat
@@ -92,7 +96,7 @@ A forbidden fruit, or a delicious treat?
 
 Any herbivore that consumes this food will have its hunger forever sated; only possible through element infusion and locally sourced produce.
 
-*100% gluten free...ish*
+*100% organic...ish*
 
 ```
 cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Consumables/FruitOfGrisaia/PrimalItemConsumable_FruitOfGrisaia.PrimalItemConsumable_FruitOfGrisaia'" 1 0 false
@@ -168,6 +172,20 @@ Use this book with a dino you want to improve your bond with, and watch as your 
 
 ```
 cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Consumables/TeamBuildingBook/PrimalItemConsumable_TeamBuildingBook.PrimalItemConsumable_TeamBuildingBook'" 1 0 false
+```
+</details>
+
+#### Stun Inhibitor
+<details><summary>------- Info ---------</summary>
+
+Because Microraptors are actually the worst.
+
+Use to immediately push yourself into overdrive and overcome most forms of being stunned, dazed, or electrocuted!
+
+*Overuse can result in racing thoughts, rapid breathing, total organ failure, and blurry vision*
+
+```
+cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Consumables/StunInhibitor/PrimalItemConsumable_StunInhibitor.PrimalItemConsumable_StunInhibitor'" 1 0 false
 ```
 </details>
 
@@ -492,6 +510,20 @@ Any tamed dino can be Slaughtered from their MultiUse menu while holding a Sickl
 For obvious reasons, this only works on dinos you own.
 
 Additionally you can choose to Slaughter Many, which has the same effect as Slaughter, but affects all dinos of the same species as the original in a ~3 foundation radius. Slaughter Many also ignores dinos that are: named, have saddles, or are mating, in an attempt to prevent accidentally killing important dinos.
+
+</details>
+
+#### Cryopod Persistence
+<details><summary>------- Info ---------</summary>
+
+Buffs added from Rose's Utilities consumables won't be lost or lose their settings when cryoing dinos.
+
+</details>
+
+#### Toggle Harvesting
+<details><summary>------- Info ---------</summary>
+
+While riding a dino, pressing the keybind for Extended HUD Info (default H) will toggle harvesting for the dino you're riding, without the need to dismount!
 
 </details>
 
