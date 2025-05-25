@@ -11,6 +11,7 @@ The settings are as follows:
 - GenomeHarvestMinLevel: Minimum level dinos must be to be Genome Harvested BEFORE multiplying by Difficulty (don't forget to account for taming effectiveness bonus levels) (0 - 999)
 - GenomeHarvestAlwaysIncreaseStatAmount: Amount Food, Oxygen, and Speed should increase per Stat Mutating Genome use (0 - 254)
 - GenomeHarvestRandomIncreaseStatAmount: Amount Weight or Stamina and Health or Melee should increase per Stat Mutating Genome use (0 - 254)
+- GenomeHarvestWorkOnClonedDinos: Can you harvest genomes from cloned dinos (True or False)
 - MutationsMaxAllowed: Max number of mutations allowed on a parent before it can't contribute mutations to its babies (vanilla is 20) (0 - 2147483647)
 - MutationsPointsPer: How many points each mutation gives (vanilla is 2) (0 - 254)
 - MutationsRolls: How many attempts at a mutation should be done for a baby (also the max number of mutations that can happen at once) (vanilla is 3) (0 - 100)
@@ -46,6 +47,7 @@ PacifyMinLevel=25
 GenomeHarvestMinLevel=40
 GenomeHarvestAlwaysIncreaseStatAmount=1
 GenomeHarvestRandomIncreaseStatAmount=2
+GenomeHarvestWorkOnClonedDinos=False
 MutationsMaxAllowed=20
 MutationsPointsPer=2
 MutationsRolls=3
