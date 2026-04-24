@@ -22,14 +22,17 @@ The settings are as follows:
 - ShockAbsorbersDamageCap: Max amount of fall damage taken when Shock Absorbers are applied (0 or higher)
 - ShockAbsorbersDamagePercent: Max percent of fall damage taken when Shock Absorbers are applied (0 - 1)
 - PlatformProtectorAllowPVPDamage: Should the Platform Protector allow PvP damage against protected dinos (True or False)
+- UniversalCodexItemsForEngramsToUnlock: Comma separated list of items the Universal Codex should unlock the engrams of when used
 - HoneyBarrelAutoCollectStructureWhitelist: Comma separated list of structures Honey Barrel can pull honey from
 - PackagerAutoCollectStructureWhitelist: Comma separated list of structures Packager can pull resources from
 - PackagerDistributeStructureWhitelist: Comma separated list of structures Packager can distribute metal and wood to
 - PackagerDistributeDinoWhitelist: Comma separated list of dinos Packager can distribute metal and wood to
+- IndustrialPreserverAutoCollectStructureWhitelist: Comma separated list of structures the Industrial Preserver should collect from
+- IndustrialPreserverAdditionalMeatItems: Comma separated list of modded meat items that should be allowed in the Industrial Preserver
+- IndustrialPreserverAutoCollectItemBlacklist: Comma separated list of items the Industrial Preserver shouldn't auto-collect
 - CommunalNestIncubationRate: Rate at which the Communal Nest incubates fertilized eggs in its inventory (0 or higher)
 - CommunalNestDisableMatingWhenFull: Should the Communal Nest disable mating for all dinos in range when full (True or False)
 - SnailSanctuaryProductionPerMinute: How many Achatina Paste the Snail Sanctuary creates per minute (0 - 1000)
-- DinoDaycareConsumptionRate: How many Rare Flowers per cycle should the Dino Daycare consume while Imprinting is enabled (0 or higher)
 - DinoDaycareAllowAutoClaim: Should Dino Daycare be able to auto claim nearby baby dinos (True or False)
 - DinoDaycareDisableMatingNearbyDinoAmount: Max number of dinos in range of Dino Daycare before disabling mating for all dinos in range; disabled if -1 (-1 - 999999)
 - HoneyBarrelAutoCollectRange: Max range in foundations (0 - 50)
@@ -38,6 +41,7 @@ The settings are as follows:
 - CropSiloAutoCollectRange: Max range in foundations (0 - 50)
 - CommunalNestAutoCollectRange: Max range in foundations (0 - 50)
 - DinoDaycareRange: Max range in foundations (0 - 30)
+- IndustrialPreserverAutoCollectRange: Max range in foundation (0 - 30)
 
 ```
 [RoseUtilities]
@@ -58,14 +62,17 @@ InfiniteFoodBuffBlacklist='Daeodon_Character_BP_C,Daeodon_Character_BP_Eden_C'
 ShockAbsorbersDamageCap=1000
 ShockAbsorbersDamagePercent=0.01
 PlatformProtectorAllowPVPDamage=false
+UniversalCodexItemsForEngramsToUnlock='/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TekReplicator.PrimalItemStructure_TekReplicator,/Game/Genesis/Dinos/SpaceWhale/PrimalItemArmor_SpaceWhaleSaddle_Tek.PrimalItemArmor_SpaceWhaleSaddle_Tek,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekGate_Large.PrimalItemStructure_TekGate_Large,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekGateframe_Large.PrimalItemStructure_TekGateframe_Large,/Game/PrimalEarth/CoreBlueprints/Items/Structures/BuildingBases/PrimalItemStructure_TekCloningChamber.PrimalItemStructure_TekCloningChamber,/Game/Genesis/Weapons/CruiseMissile/PrimalItem_WeaponTekCruiseMissile.PrimalItem_WeaponTekCruiseMissile,/Game/PrimalEarth/StructuresPlus/Structures/Walls_L/Tek/PrimalItemStructure_LargeWall_Tek.PrimalItemStructure_LargeWall_Tek,/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemArmor_MegalodonSaddle_Tek.PrimalItemArmor_MegalodonSaddle_Tek,/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemArmor_MosaSaddle_Tek.PrimalItemArmor_MosaSaddle_Tek,/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemArmor_RexSaddle_Tek.PrimalItemArmor_RexSaddle_Tek,/Game/Aberration/Dinos/RockDrake/PrimalItemArmor_RockDrakeSaddle_Tek.PrimalItemArmor_RockDrakeSaddle_Tek,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekRoof.PrimalItemStructure_TekRoof,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekWall_Sloped_Left.PrimalItemStructure_TekWall_Sloped_Left,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekWall_Sloped_Right.PrimalItemStructure_TekWall_Sloped_Right,/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemArmor_Tapejara_Tek.PrimalItemArmor_Tapejara_Tek,/Game/PrimalEarth/CoreBlueprints/Items/Armor/TEK/PrimalItemArmor_TekBoots.PrimalItemArmor_TekBoots,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekCatwalk.PrimalItemStructure_TekCatwalk,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekCeiling.PrimalItemStructure_TekCeiling,/Game/PrimalEarth/CoreBlueprints/Items/Armor/TEK/PrimalItemArmor_TekShirt.PrimalItemArmor_TekShirt,/Game/Genesis/Weapons/TekHandBlades/PrimalItem_WeaponTekClaws.PrimalItem_WeaponTekClaws,/Game/PrimalEarth/StructuresPlus/Misc/DedicatedStorage/PrimalItemStructure_DedicatedStorage.PrimalItemStructure_DedicatedStorage,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekGate.PrimalItemStructure_TekGate,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekGateframe.PrimalItemStructure_TekGateframe,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekDoor.PrimalItemStructure_TekDoor,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekWallWithDoor.PrimalItemStructure_TekWallWithDoor,/Game/PrimalEarth/StructuresPlus/Doors/Doors_Double/Tek/PrimalItemStructure_DoubleDoor_Tek.PrimalItemStructure_DoubleDoor_Tek,/Game/PrimalEarth/StructuresPlus/Structures/Doorframes_Double/Tek/PrimalItemStructure_DoubleDoorframe_Tek.PrimalItemStructure_DoubleDoorframe_Tek,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekFenceFoundation.PrimalItemStructure_TekFenceFoundation,/Game/PrimalEarth/StructuresPlus/Structures/FenceSupports/Tek/PrimalItemStructure_FenceSupport_Tek.PrimalItemStructure_FenceSupport_Tek,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TekShield.PrimalItemStructure_TekShield,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekFloor.PrimalItemStructure_TekFloor,/Game/PrimalEarth/CoreBlueprints/Items/Armor/TEK/PrimalItemArmor_TekGloves.PrimalItemArmor_TekGloves,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TekGenerator.PrimalItemStructure_TekGenerator,/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_TekGrenade.PrimalItem_TekGrenade,/Game/Genesis/Weapons/TekGrenadeLauncher/PrimalItem_WeaponTekGrenadeLauncher.PrimalItem_WeaponTekGrenadeLauncher,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekCeilingWithTrapdoor.PrimalItemStructure_TekCeilingWithTrapdoor,/Game/PrimalEarth/CoreBlueprints/Items/Armor/TEK/PrimalItemArmor_TekHelmet.PrimalItemArmor_TekHelmet,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekLadder.PrimalItemStructure_TekLadder,/Game/PrimalEarth/CoreBlueprints/Items/Armor/TEK/PrimalItemArmor_TekPants.PrimalItemArmor_TekPants,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TekLight.PrimalItemStructure_TekLight,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekPillar.PrimalItemStructure_TekPillar,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekRailing.PrimalItemStructure_TekRailing,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekRamp.PrimalItemStructure_TekRamp,/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_TekRifle.PrimalItem_TekRifle,/Game/Aberration/WeaponTekSniper/PrimalItem_TekSniper.PrimalItem_TekSniper,/Game/Genesis/Structures/TekAlarm/PrimalItemStructure_TekAlarm.PrimalItemStructure_TekAlarm,/Game/PrimalEarth/CoreBlueprints/Items/Armor/Shields/PrimalItemArmor_ShieldTek.PrimalItemArmor_ShieldTek,/Game/Genesis/Items/Armor/PrimalItemArmor_ShoulderCannon.PrimalItemArmor_ShoulderCannon,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_Bed_Tek.PrimalItemStructure_Bed_Tek,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekStairs.PrimalItemStructure_TekStairs,/Game/PrimalEarth/StructuresPlus/Structures/Ramps/Tek/PrimalItemStructure_Ramp_Tek.PrimalItemStructure_Ramp_Tek,/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponTekSword.PrimalItem_WeaponTekSword,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TekTeleporter.PrimalItemStructure_TekTeleporter,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TekTransmitter.PrimalItemStructure_TekTransmitter,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekTrapdoor.PrimalItemStructure_TekTrapdoor,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TekTrough.PrimalItemStructure_TekTrough,/Game/PrimalEarth/StructuresPlus/Structures/Ceilings/Triangle/Tek/PrimalItemStructure_TriCeiling_Tek.PrimalItemStructure_TriCeiling_Tek,/Game/PrimalEarth/StructuresPlus/Structures/Foundations/Triangle/Tek/PrimalItemStructure_TriFoundation_Tek.PrimalItemStructure_TriFoundation_Tek,/Game/PrimalEarth/StructuresPlus/Structures/Roofs_Tri/Tek/PrimalItemStructure_TriRoof_Tek.PrimalItemStructure_TriRoof_Tek,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TurretTek.PrimalItemStructure_TurretTek,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekWall.PrimalItemStructure_TekWall,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekWindow.PrimalItemStructure_TekWindow,/Game/PrimalEarth/CoreBlueprints/Items/Structures/Tek/PrimalItemStructure_TekWallWithWindow.PrimalItemStructure_TekWallWithWindow,/Game/Genesis2/Dinos/Exosuit/PrimalItem_Spawner_Exosuit.PrimalItem_Spawner_Exosuit,/Game/Genesis/CoreBlueprints/Items/PrimalItem_Spawner_HoverSkiff.PrimalItem_Spawner_HoverSkiff,/Game/PrimalEarth/CoreBlueprints/Items/Structures/BuildingBases/PrimalItemStructure_UnderwaterBase.PrimalItemStructure_UnderwaterBase,/Game/PrimalEarth/CoreBlueprints/Items/Structures/BuildingBases/PrimalItemStructure_UnderwaterBase_Moonpool.PrimalItemStructure_UnderwaterBase_Moonpool'
 HoneyBarrelAutoCollectStructureWhitelist=/Game/PrimalEarth/Structures/BeeHive/BeeHive_PlayerOwned.BeeHive_PlayerOwned,/Game/Mods/StructuresPlusMod/Misc/BeeHive/BP_BeeHivePlus.BP_BeeHivePlus'
 PackagerAutoCollectStructureWhitelist='/Game/PrimalEarth/Structures/Forge.Forge,/Game/PrimalEarth/Structures/IndustrialForge.IndustrialForge,/Game/Mods/StructuresPlusMod/Crafting/RefiningForge/BP_ForgePlus.BP_ForgePlus,/Game/Mods/StructuresPlusMod/Misc/IndustrialForge/BP_IndustrialForgePlus.BP_IndustrialForgePlus,/Game/Mods/StructuresPlusMod/Misc/TekForge/BP_TekForge.BP_TekForge'
 PackagerDistributeStructureWhitelist='/Game/PrimalEarth/Structures/Forge.Forge,/Game/PrimalEarth/Structures/IndustrialForge.IndustrialForge,/Game/Mods/StructuresPlusMod/Crafting/RefiningForge/BP_ForgePlus.BP_ForgePlus,/Game/Mods/StructuresPlusMod/Misc/IndustrialForge/BP_IndustrialForgePlus.BP_IndustrialForgePlus,/Game/Mods/StructuresPlusMod/Misc/TekForge/BP_TekForge.BP_TekForge'
 PackagerDistributeDinoWhitelist='/Game/Genesis/Dinos/Cherufe/Cherufe_Character_BP.Cherufe_Character_BP,/Game/ScorchedEarth/Dinos/Phoenix/Phoenix_Character_BP.Phoenix_Character_BP'
+IndustrialPreserverAutoCollectStructureWhitelist='/Game/PrimalEarth/Structures/Grill.Grill,/Game/Mods/StructuresPlusMod/Misc/IndustrialGrill/BP_IndustrialGrill.BP_IndustrialGrill'
+IndustrialPreserverAdditionalMeatItems='/Game/Mods/BetterDinosTest/Phiomia/PrimalItemConsumable_SwineFlesh.PrimalItemConsumable_SwineFlesh'
+IndustrialPreserverAutoCollectItemBlacklist='/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_RawMeat.PrimalItemConsumable_RawMeat,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_RawMeat_Fish.PrimalItemConsumable_RawMeat_Fish,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_RawMutton.PrimalItemConsumable_RawMutton,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_RawPrimeMeat.PrimalItemConsumable_RawPrimeMeat,/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_RawPrimeMeat_Fish.PrimalItemConsumable_RawPrimeMeat_Fish'
 CommunalNestIncubationRate=1
 CommunalNestDisableMatingWhenFull=True
 SnailSanctuaryProductionPerMinute=1
-DinoDaycareConsumptionRate=1
 DinoDaycareAllowAutoClaim=True
 DinoDaycareDisableMatingNearbyDinoAmount=1000
 HoneyBarrelAutoCollectRange=25
@@ -74,6 +81,7 @@ IndustrialComposterRange=25
 CropSiloAutoCollectRange=25
 CommunalNestAutoCollectRange=25
 DinoDaycareRange=15
+IndustrialPreserverAutoCollectRange=25
 ```
 
 ## S+ Pull Resource Config
@@ -110,6 +118,20 @@ Any herbivore that consumes this food will have its hunger forever sated; only p
 
 ```
 cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Consumables/FruitOfGrisaia/PrimalItemConsumable_FruitOfGrisaia.PrimalItemConsumable_FruitOfGrisaia'" 1 0 false
+```
+</details>
+
+#### Growth Blocker
+<details><summary>------- Info ---------</summary>
+
+Some dinos just want to stay forever young.
+
+The Growth Blocker lets you permanently halt the growth of a baby dino so you can forever enjoy its cuteness! Of course, babydinos aren't the best to send into combat, so the Growth Blocker can be disabled if needed, but be away that any growth thathappens while its disabled is irreversible!
+
+*Halting growth on dinos going through their angsty phase is...inadvisable*
+
+```
+cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Consumables/GrowthBlocker/PrimalItemConsumable_GrowthBlocker.PrimalItemConsumable_GrowthBlocker'" 1 0 false
 ```
 </details>
 
@@ -157,6 +179,30 @@ cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Consumables/ShockAbsor
 ```
 </details>
 
+#### Stable Medical Brew
+<details><summary>------- Info ---------</summary>
+
+This brew doesn't have any nutritional value, but it promotes healing. It tastes sweet and a little powdery, and it will never spoil.
+
+```
+cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Consumables/StableMedicalBrew/PrimalItemConsumable_StableMedicalBrew.PrimalItemConsumable_StableMedicalBrew'" 1 0 false
+```
+</details>
+
+#### Stun Inhibitor
+<details><summary>------- Info ---------</summary>
+
+Because Microraptors are actually the worst.
+
+Use to immediately push yourself into overdrive and overcome most forms of being stunned, dazed, or electrocuted!
+
+*Overuse can result in racing thoughts, rapid breathing, total organ failure, and blurry vision*
+
+```
+cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Consumables/StunInhibitor/PrimalItemConsumable_StunInhibitor.PrimalItemConsumable_StunInhibitor'" 1 0 false
+```
+</details>
+
 #### Survival Kit
 <details><summary>------- Info ---------</summary>
 
@@ -185,17 +231,23 @@ cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Consumables/TeamBuildi
 ```
 </details>
 
-#### Stun Inhibitor
+#### Universal Codex
 <details><summary>------- Info ---------</summary>
 
-Because Microraptors are actually the worst.
+The knowledge of the universe in the palm of your hand.
 
-Use to immediately push yourself into overdrive and overcome most forms of being stunned, dazed, or electrocuted!
+Tek might be confusing, but with the Universal Codex, even you can understand it all! Contained within it is every instructional manual, For Dummies Book, and specification guide primed to be beamed directly into your brain! 
 
-*Overuse can result in racing thoughts, rapid breathing, total organ failure, and blurry vision*
+*Occasional headaches from being too big brain may occur after usage*
 
 ```
-cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Consumables/StunInhibitor/PrimalItemConsumable_StunInhibitor.PrimalItemConsumable_StunInhibitor'" 1 0 false
+cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Consumables/UniversalCodex/PrimalItemConsumable_UniversalCodex.PrimalItemConsumable_UniversalCodex'" 1 0 false
+```
+```
+OverrideNamedEngramEntries=(EngramClassName="EngramEntry_UniversalCodex_C",EngramLevelRequirement=190,EngramPointsCost=100,EngramHidden=False,RemoveEngramPreReq=False)
+```
+```
+ConfigOverrideItemCraftingCosts=(ItemClassString="PrimalItemConsumable_UniversalCodex_C",BaseCraftingResourceRequirements=((ResourceItemTypeString="PrimalItemResource_Element_C",BaseResourceRequirement=250.000000,bCraftingRequireExactResourceType=False),(ResourceItemTypeString="PrimalItemResource_MetalIngot_C",BaseResourceRequirement=10.000000,bCraftingRequireExactResourceType=False),(ResourceItemTypeString="PrimalItemResource_BlackPearl_C",BaseResourceRequirement=100.000000,bCraftingRequireExactResourceType=False),(ResourceItemTypeString="PrimalItemTrophyGenericWall_C",BaseResourceRequirement=50.000000,bCraftingRequireExactResourceType=False)))
 ```
 </details>
 
@@ -297,19 +349,31 @@ Itemized dinos created with a Pacification Injector.
 Cannot be converted back to real dinos and only used for crafting Rose Utilities structures.
 
 Types:
+- Aberrant Purlovia
+- Aberrant Titanoboa
 - Achatina
 - Dung Beetle
+- Hyaenodon (Can also be crafted with a Pacified Roll Rat (Aberration or Genesis) in a Smithy)
 - Iguanodon
-- Oviraptor (Can also be crafted with a Pacified Roll Rat or Vulture in a Smithy)
-- Procoptodon (Can also be crafted with a Pacified Roll Rat in a Smithy)
+- Oviraptor (Can also be crafted with a Pacified Aberrant Titanoboa (Aberration) or a Pacified Vulture (Scorched Earth) in a Smithy)
+- Procoptodon (Can also be crafted with a Pacified Aberrant Purlovia (Aberration) in a Smithy)
 - Roll Rat
 - Vulture
 
+```
+cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Resources/PacifiedDinos/PrimalItemResource_PacifiedDino_AberrantPurlovia.PrimalItemResource_PacifiedDino_AberrantPurlovia'" 1 0 false
+```
+```
+cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Resources/PacifiedDinos/PrimalItemResource_PacifiedDino_AberrantTitanoboa.PrimalItemResource_PacifiedDino_AberrantTitanoboa'" 1 0 false
+```
 ```
 cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Resources/PacifiedDinos/PrimalItemResource_PacifiedDino_Achatina.PrimalItemResource_PacifiedDino_Achatina'" 1 0 false
 ```
 ```
 cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Resources/PacifiedDinos/PrimalItemResource_PacifiedDino_DungBeetle.PrimalItemResource_PacifiedDino_DungBeetle'" 1 0 false
+```
+```
+cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Resources/PacifiedDinos/PrimalItemResource_PacifiedDino_Hyaenodon.PrimalItemResource_PacifiedDino_Hyaenodon'" 1 0 false
 ```
 ```
 cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Items/Resources/PacifiedDinos/PrimalItemResource_PacifiedDino_Iguanodon.PrimalItemResource_PacifiedDino_Iguanodon'" 1 0 false
@@ -446,7 +510,7 @@ cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Structures/CropSilo/PrimalIt
 
 Parenting is tough, so let someone else do it!
 
-The Dino Daycare takes care of your baby dinos while you're busy adventuring. Not only does it feed baby dinos, it also claims them for you when they are born! Additionally, it can be trained to only claim dinos of a specific species, and cull unnamed babies that are below a certain level. As a bonus on top of all of that, it can even imprint them if given Rare Flowers; all thanks to the built-in Procoptodon and its caring, nurturing nature.
+The Dino Daycare takes care of your baby dinos while you're busy adventuring! Not only does it feed and imprint baby dinos, but it also claims them for you when they are born. On top of that, it can be filtered to cull unwanted babies below a certain level, taking care of one of the more gruesome sides of dino parenting. All of this is thanks to the built-in Procoptodon and its naturally nurturing, but firm, instincts.
 
 *Usage waves right to complain on how dinos are raised and taught*
 
@@ -482,6 +546,20 @@ The Dung Beetle also enables fertilizer production without thatch, at an admitte
 
 ```
 cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Structures/IndustrialComposter/PrimalItemStructure_IndustrialComposter.PrimalItemStructure_IndustrialComposter'" 1 0 false
+```
+</details>
+
+#### Industrial Preserver
+<details><summary>------- Info ---------</summary>
+
+It automates AND it preserves.
+
+Are your fridges overflowing with meat your preserving bins taking way too long to make jerky? Then the Industrial Preserver is what you need! The built-in Hyaenodon will keep your meats from spoiling better than any fridge and can also fetch meat from nearby Industrial Grills so you don't have to! On top of that, cooked meats inside the Industrial Preserver will slowly convert into jerky without the need for oil or sparkpowder!
+
+*Any bite marks found on stored meats where there when you put them in*
+
+```
+cheat giveitem "Blueprint'/Game/Mods/RosesUtilities/Structures/IndustrialPreserver/PrimalItemStructure_IndustrialPreserver.PrimalItemStructure_IndustrialPreserver'" 1 0 false
 ```
 </details>
 
@@ -560,5 +638,29 @@ cheat ScriptCommand RUGiveAll
 ```
 ```
 cheat ScriptCommand RUTest
+```
+</details>
+
+#### Multi-Use Entry Indices Used
+<details><summary>------- Info ---------</summary>
+
+This is mostly just for compatibility with other mods if there are issues or if you're trying to create and addon or do something else outside the norm.
+
+```
+851723 Break Transfer Link
+876678 Slaughter
+876679 Slaughter Many
+874478 Harvest Genomes
+975579 Pacify Dino
+93140 Back Option in Rose's Utilities options menu	
+93141 Rose's Utilities options menu
+93142 V-Mate Toggle Icon (-999 priority)
+93143 Shock Absorber Toggle Icon (-998 priority)
+93144 Fruit of Grisaia Toggle Icon (-997 priority)
+93145 Flesh of Ouroboros Toggle Icon (-996 priority)	
+93146 Platform Protector Toggle Icon (-995 priority)
+93246 Platform Protector Toggle Buff Active (-999999 priority)
+93147 Growth Blocker Toggle Icon (-994 priority)
+93247 Growth Blocker Toggle Buff Active (-999999 priority)
 ```
 </details>
